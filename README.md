@@ -14,12 +14,12 @@ Based on _tgsend.sh_ - a bash script that sends messages/images.
 ```
 ### Build docker image:
 ```
-~:$ docker build -t tgsend -f ./Dockerfile .
+~:$ docker build -t tgsend .
 ```
 
 ### Deploy OpenFaas function:
 ```
-~:$ faas deploy tgsend -f tgsend.openfaas.yml
+~:$ faas deploy tgsend
 ```
 
 ### Use OpenFaas function:
