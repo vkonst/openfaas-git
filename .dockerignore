@@ -1,0 +1,4 @@
+Dockerfile
+.dockerignore
+README.md
+tgsend.openfaas.yml

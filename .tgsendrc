@@ -1,0 +1,12 @@
+## Keep it private - whenever possible use Docker/k8s/OpenFaas secrets
+## Tokens:
+# defaultApiToken=999999999:fffffffffffffffffffffffffffffffffff
+# adminBotToken=888888888:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+## Chats:
+# mike=333333333
+# team='-777777777'
+# defaultChat=${team}
+##
+
+# Uncomment if used with OpenFaas
+export QUERY_STRING=${Http_Query}
