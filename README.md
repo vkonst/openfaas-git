@@ -10,7 +10,14 @@ Based on _tgsend.sh_ - a bash script that sends messages/images.
 # config example:
 ~:$ cat .tgsendrc
 # NB: always prefer docker/k8s/openfaas secret to store API token(s)
-~:$ cat your_secret_file | faas secret create tgsend
+~:$ cat << _EOF_
+# Tokens:
+defaultApiToken=999999999:fffffffffffffffffffffffffffffffffff
+adminBotToken=888888888:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+# Chats:
+mike=333333333
+team='-777777777'
+_EOF_ | faas secret create tgsend
 ```
 ### Build docker image:
 ```
